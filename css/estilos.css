@@ -1,4 +1,61 @@
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables globales */
+:root {
+  --bg-color-200:hsl(214, 25%, 11%);
+  --bg-color-400:hsl(212, 19%, 16%);
+  --bg-color-400-75:hsl(212, 19%, 16%, 75%);
+  --bg-color-500:hsl(212, 19%, 25%);
+  --text-color:hsl(215, 25%, 85%);
+  --accent-color-200:hsl(22, 44%, 12%);
+  --accent-color-400:hsl(22, 100%, 65%);
+  --accent-color-500:hsl(22, 100%, 85%);
+}
+
+/* Estilos generales */
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 body {
-  background-color: black;
-  color: white;
+  margin: 0; /* Margen del body */
+  background-color: var(--bg-color-200);
+  color: var(--text-color);
+}
+
+
+/* Estilos para el Header */
+header {
+  background-color: var(--bg-color-400);
+  margin: 0; /* Márgen externo */
+  padding: 16px; /* Márgen interno */
+  text-align: center; /* text-align es una propiedad heredable. */
+}
+
+/* Ejemplo con Google Fonts
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+*/
+
+
+/* Clase 2 */
+/* Modelo de caja */
+.modelo-de-caja {
+  border: 3px solid var(--accent-color-400); /* grosor del borde, estilo, color */
+  text-align: center;
+  padding: 16px; /* Margen interno */
+  background-color: var(--bg-color-400);
+  margin: 64px auto; /* 16px arriba y abajo / izquierda y derecha*/
+  width: 250px; /* Ancho */
+  height: 150px; /* Alto */
+}
+
+
+/* Estilos para el footer */
+footer {
+  background-color: var(--bg-color-400);
+  padding: 16px;
 }
