@@ -1,4 +1,4 @@
-/* Tipografía */
+/* Tipografía desde Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Variables globales */
@@ -33,14 +33,6 @@ header {
   text-align: center; /* text-align es una propiedad heredable. */
 }
 
-/* Ejemplo con Google Fonts
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-}
-*/
-
-
 /* Clase 2 */
 /* Modelo de caja */
 .modelo-de-caja {
@@ -53,6 +45,12 @@ h1 {
   height: 150px; /* Alto */
 }
 
+/* Ejemplo con Google Fonts
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+*/
 
 /* Estilos para el footer */
 footer {
