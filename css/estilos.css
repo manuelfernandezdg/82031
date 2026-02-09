@@ -28,18 +28,8 @@ body {
   line-height: 1.6; /* Altura de los renglones */
 }
 
-p {
-  font-size: 1rem; /* (16px) */
-  width: min(40rem, 100%);
-}
-
 main {
   padding: 1rem;
-}
-
-section {
-  width: var(--container-size);
-  margin: 0 auto;
 }
 
 /*
@@ -56,23 +46,21 @@ header {
   text-align: center; /* text-align es una propiedad heredable. */
 }
 
-
-/* Pantalla de celular: 390px / 798px / +1440px */
+header h1 {
+  margin: 0;
+}
 
 /* Estilos para las secciones */
-#bienvenida {
-  background-image: url('../img/bienvenida.jpg');
-  background-size: cover;
-  background-position: center;
-  /*background-attachment: fixed;*/
-  height: 30rem;
+section {
+  width: var(--container-size);
+  margin: 0 auto;
 }
 
-/*
-section:first-of-type {
-  color: red;
+/* Párrafos en las secciones */
+p {
+  font-size: 1rem; /* (16px) */
+  width: min(40rem, 100%);
 }
-*/
 
 section h1 {
   text-align: center; /* centrar el texto */
@@ -80,6 +68,14 @@ section h1 {
   /* 1rem = 16px */
   font-weight: 400; /* grosor del trazo */
   /* font-style: italic; */
+}
+
+#bienvenida {
+  background-image: url('../img/bienvenida.jpg');
+  background-size: cover;
+  background-position: center;
+  /*background-attachment: fixed;*/
+  height: 30rem;
 }
 
 /* Clase 2 */
@@ -103,9 +99,12 @@ h1 {
 */
 
 
-
 /* Estilos para el footer */
 footer {
   background-color: var(--bg-color-400);
   padding: 16px;
+}
+
+footer h1 {
+  font-size: 1rem;
 }
