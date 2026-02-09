@@ -38,6 +38,13 @@ img {
 }
 */
 
+/* Ejemplo con Google Fonts
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+*/
+
 /* Estilos para el Header */
 header {
   background-color: var(--bg-color-400);
@@ -49,6 +56,29 @@ header {
 header h1 {
   margin: 0;
 }
+
+header ul {
+  list-style: none; /* Quitarle el estilo a la lista */
+  padding: 0; /* Quitar el padding a la lista */
+  flex-direction: row;
+  display: flex; 
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Links para el nav */
+/* Reposo y Visitado*/
+header nav a:link,
+header nav a:visited {
+  color: var(--text-color);
+  text-decoration: none;
+}
+/* Hover y Active*/
+header nav a:hover,
+header nav a:active {
+  color: var(--accent-color-400);
+}
+
 
 /* Estilos para las secciones */
 section {
@@ -67,18 +97,41 @@ section h1 {
   font-size: 2.5rem; /* modifica el tamaño del cuerpo de la tipografía */
   /* 1rem = 16px */
   font-weight: 400; /* grosor del trazo */
-  /* font-style: italic; */
+  /* font-style: italic; */ /* Variable de inclinación */
 }
 
+/* Sección de bienvenida */
 #bienvenida {
   background-image: url('../img/bienvenida.jpg');
   background-size: cover;
   background-position: center;
   /*background-attachment: fixed;*/
   height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Clase 2 */
+#bienvenida h1 {
+  background-color: var(--bg-color-400-75);
+  padding: 1rem 0;
+}
+
+/* Links para las secciones */
+/* Reposo y Visitado*/
+a:link,
+a:visited {
+  color: var(--accent-color-400);
+  text-decoration: none;
+}
+/* Hover y Active*/
+a:hover,
+a:active {
+  color: var(--accent-color-500);
+}
+
+
+/* Clase 2 / 3 */
 /* Modelo de caja */
 .modelo-de-caja {
   border: 0.2rem solid var(--accent-color-400); /* grosor del borde, estilo, color */
@@ -91,20 +144,46 @@ section h1 {
   height: 8rem; /* Alto */
 }
 
-/* Ejemplo con Google Fonts
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-}
-*/
+/* Clase 4 */
+.contenedor-flex {
+  padding: 1rem;
+  border: 0.15rem solid var(--accent-color-500);
+  display: flex; /* Aplica sobre el contenedor */
+  flex-direction: row; /* Dirección del eje principal */
+  justify-content: space-between; /* Justifica el eje principal */
+  align-items: stretch; /* Justifica el eje secundario */
+  gap: 1rem; /* Distancia entre elementos */
 
+  height: 24rem;
+}
+
+.item {
+  text-align: center;
+  border: 0.15rem solid var(--accent-color-400);
+  padding: 1rem;
+  width: 14rem;
+}
 
 /* Estilos para el footer */
 footer {
   background-color: var(--bg-color-400);
   padding: 16px;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer h1 {
   font-size: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer img {
+  width: 2rem;
 }

@@ -9,11 +9,17 @@
 <body>
   <header>
     <h1><a href="index.html">DW</a></h1>
-    <a href="clase1.html">Clase 1</a>
-    <a href="clase2.html">Clase 2</a>
-    <a href="clase3.html">Clase 3</a>
-    <a href="clase4.html">Clase 4</a>
-    <a href="clase5.html">Clase 5</a>
+
+    <nav>
+      <ul>
+        <li><a href="clase1.html">Clase 1</a></li>
+        <li><a href="clase2.html">Clase 2</a></li>
+        <li><a href="clase3.html">Clase 3</a></li>
+        <li><a href="clase4.html">Clase 4</a></li>
+        <li><a href="clase5.html">Clase 5</a></li>
+      </ul>
+    </nav>
+
   </header>
   <main>
     <section id="bienvenida">
@@ -23,8 +29,17 @@
       <h1>Flexbox</h1>
       <p>Flexbox es un método de CSS para ordenar elementos en filas o columnas. Además, sirve para que los elementos sean "flexibles" dentro de un contenedor.</p>
       <a href="https://www.w3schools.com/csS/css3_flexbox.asp" target="_blank" rel="noopener noreferrer">Guía oficial sobre Flexbox en la W3C</a>
-      
+      <h2>Ejemplo de contenedor con Flex</h2>
+
+      <div class="contenedor-flex">
+        <div class="item"><span>1</span></div>
+        <div class="item"><span>2</span></div>
+        <div class="item"><span>3</span></div>
+        <div class="item"><span>4</span></div>
+      </div>
+
     </section>
+    
     <section>
       <h1>Vínculos</h1>
       <p>Para editar el aspecto visual de nuestros vínculos debemos tener en cuenta que los mismos están compuestos por 5 estados:</p>
@@ -39,9 +54,17 @@
     </section>
   </main>
   <footer>
-    <h1>Sobre nuestro curso:</h1>
-    <a href="https://www.educacionit.com/curso-de-html" target="_blank" rel="noopener noreferrer">Programa</a>
-    <a href="https://alumni.education/" target="_blank" rel="noopener noreferrer">Alumni</a>
+    <ul>
+      <li><h1>Sobre nuestro curso:</h1></li>
+      <li><a href="https://www.educacionit.com/curso-de-html" target="_blank" rel="noopener noreferrer">Programa</a></li>
+      <li><a href="https://alumni.education/" target="_blank" rel="noopener noreferrer">Alumni</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="https://discord.gg/VVF5hCf4" target="_blank" rel="noopener noreferrer"><img src="img/discord-brands-solid-full.svg" alt="Ingresar a nuestro servidor de Discord"></a></li>
+      <li><a href="https://wa.me/5491152638148" target="_blank" rel="noopener noreferrer"><img src="img/whatsapp-brands-solid-full.svg" alt="Envianos un mensaje a nuestro Whatsapp"></a></li>
+      <li><a href="https://github.com/manuelfernandezdg/82031" target="_blank" rel="noopener noreferrer"><img src="img/github-brands-solid-full.svg" alt="Ingresar a nuestro repo en Github"></a></li>
+    </ul>
   </footer>
 </body>
 </html>
