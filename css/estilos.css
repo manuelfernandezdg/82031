@@ -96,7 +96,6 @@ p {
 section h1 {
   text-align: center; /* centrar el texto */
   font-size: 2.5rem; /* modifica el tamaño del cuerpo de la tipografía */
-  /* 1rem = 16px */
   font-weight: 400; /* grosor del trazo */
   /* font-style: italic; */ /* Variable de inclinación */
 }
@@ -131,6 +130,34 @@ a:active {
   color: var(--accent-color-500);
 }
 
+/* Estilos para el footer */
+footer {
+  background-color: var(--bg-color-400);
+  padding: 16px;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  width: var(--container-size);
+  margin: 0 auto;
+}
+
+footer h1 {
+  font-size: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer img {
+  width: 2rem;
+}
 
 /* Clase 2 / 3 */
 /* Modelo de caja */
@@ -166,28 +193,70 @@ a:active {
 }
 
 /* Clase 5 / Flexbox */
-
-
-/* Estilos para el footer */
-footer {
-  background-color: var(--bg-color-400);
-  padding: 16px;
+.contenedor-novedades {
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
 }
 
-footer h1 {
-  font-size: 1rem;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
+article {
+  width: 14rem;
+  text-align: center;
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0.5rem;
 }
 
-footer img {
-  width: 2rem;
+article h2,
+article h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+article h3 {
+  font-weight: 400;
+}
+
+article img {
+  width: 100%;
+}
+
+/* Estilos de los links de novedades */
+a.btn-outline:link,
+a.btn-outline:visited {
+  color: var(--text-color);
+  border: 0.15rem solid var(--bg-color-500);
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+a.btn-outline:hover,
+a.btn-outline:active {
+  background-color: var(--bg-color-500);
+  color: var(--accent-color-400);
+}
+
+a.btn-fill:link,
+a.btn-fill:visited {
+  color: var(--text-color);
+  border: 0.15rem solid var(--bg-color-500);
+  font-size: 0.85rem;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+a.btn-fill:hover,
+a.btn-fill:active {
+  border: 0.15rem solid var(--accent-color-400);
+  background-color: var(--accent-color-400);
+  color: var(--bg-color-400);
+}
+
+.contenedor-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
